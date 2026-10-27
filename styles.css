@@ -1,0 +1,26 @@
+:root { --cream: #fbf7f0; --sage: #667c68; --dark: #26352d; --clay: #c98065; --white: #fffdf9; --muted: #59645b; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: var(--cream); color: var(--dark); line-height: 1.65; }
+.notice { background: #f0e5d8; color: #493c32; padding: 10px 5%; font-size: .88rem; text-align: center; }
+header { background: var(--white); border-bottom: 1px solid #e8e0d5; padding: 18px 5%; }
+.header-inner { max-width: 1080px; margin: auto; display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; }
+.brand { color: var(--sage); font-size: 1.35rem; font-weight: 800; letter-spacing: .04em; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 14px; }
+nav a { color: var(--dark); text-decoration: none; font-weight: 700; font-size: .95rem; }
+nav a:hover, nav a:focus { color: var(--clay); text-decoration: underline; }
+main { max-width: 1080px; margin: auto; padding: 38px 5% 55px; }
+.hero { background: #e5e9dd; border-radius: 18px; padding: clamp(28px, 6vw, 65px); margin: 10px 0 32px; }
+.eyebrow { color: var(--sage); text-transform: uppercase; font-weight: 800; letter-spacing: .12em; font-size: .8rem; }
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.12; margin: 12px 0 18px; max-width: 780px; }
+h2 { line-height: 1.2; margin-top: 32px; }
+p { max-width: 760px; }
+.button { display: inline-block; background: var(--sage); color: white; text-decoration: none; padding: 12px 19px; border-radius: 999px; margin-top: 10px; font-weight: 700; }
+.button:hover, .button:focus { background: var(--dark); }
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: 24px 0; }
+.card { background: var(--white); border: 1px solid #e8e0d5; padding: 22px; border-radius: 14px; }
+.card h3 { margin-top: 0; }
+.callout { background: #f0e5d8; padding: 22px; border-radius: 14px; margin: 28px 0; }
+footer { background: var(--dark); color: white; padding: 26px 5%; text-align: center; font-size: .9rem; }
+footer p { margin: 8px auto; }
+ul, ol { padding-left: 1.3rem; }
+@media (max-width: 720px) { .cards { grid-template-columns: 1fr; } .header-inner { align-items: flex-start; } nav { gap: 10px 14px; } main { padding-top: 22px; } }
